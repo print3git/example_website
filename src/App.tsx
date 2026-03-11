@@ -8,8 +8,12 @@ import { ProcessPage } from "./pages/ProcessPage";
 import { ServicesPage } from "./pages/ServicesPage";
 
 export default function App() {
+  const basename = window.location.pathname.startsWith("/example_website")
+    ? "/example_website"
+    : undefined;
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <a className="skip-link" href="#main-content">
         Skip to main content
       </a>
