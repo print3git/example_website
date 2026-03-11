@@ -1,0 +1,379 @@
+.contact-page {
+  isolation: isolate;
+}
+
+.contact-page .section {
+  position: relative;
+}
+
+.contact-page .section--tinted {
+  background:
+    radial-gradient(115% 85% at 8% 0%, rgba(176, 141, 87, 0.14) 0%, rgba(176, 141, 87, 0) 58%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.62) 0%, rgba(248, 245, 238, 0.78) 100%);
+  border-block: var(--border-hairline);
+}
+
+.contact-page .kicker {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-label);
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--color-steel-700);
+}
+
+.contact-page .page-hero {
+  padding-top: var(--space-7);
+}
+
+.contact-page .page-hero__inner {
+  max-width: 56rem;
+}
+
+.contact-page .page-hero h1 {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-hero);
+  line-height: 1.03;
+}
+
+.contact-page .page-hero p {
+  margin: 0;
+  font-size: var(--text-body-lg);
+  color: var(--color-text-secondary);
+}
+
+.contact-page .booking-layout {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--space-4);
+  align-items: stretch;
+}
+
+.contact-page .form-card {
+  grid-column: span 7;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-2);
+  border: var(--border-hairline);
+  background: var(--color-bg-surface);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-5);
+}
+
+.contact-page .section-head {
+  max-width: 52rem;
+  margin-bottom: var(--space-4);
+}
+
+.contact-page .section-head h2 {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-h2);
+}
+
+.contact-page .section-head p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.contact-page .booking-form {
+  display: grid;
+  gap: var(--space-3);
+  flex: 1;
+}
+
+.contact-page .form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.contact-page .form-field {
+  margin-bottom: 0;
+}
+
+.contact-page .input--select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-steel-700) 50%),
+    linear-gradient(135deg, var(--color-steel-700) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1rem) calc(1rem + 1px),
+    calc(100% - 0.72rem) calc(1rem + 1px);
+  background-size: 0.36rem 0.36rem, 0.36rem 0.36rem;
+  background-repeat: no-repeat;
+}
+
+.contact-page .input--textarea {
+  min-height: 8.25rem;
+  resize: vertical;
+}
+
+.contact-page .consent-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-2);
+  align-items: start;
+  padding-top: var(--space-1);
+}
+
+.contact-page .consent-row input[type="checkbox"] {
+  margin-top: 0.3rem;
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--color-interactive-primary);
+}
+
+.contact-page .consent-row label {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.contact-page .form-field__error--consent {
+  margin-top: calc(var(--space-1) * -1);
+}
+
+.contact-page .booking-form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.contact-page .booking-form__actions .btn {
+  min-width: 15rem;
+}
+
+.contact-page .form-status {
+  margin: 0;
+  border-radius: var(--radius-1);
+  border: 1px solid transparent;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-body-sm);
+}
+
+.contact-page .form-status--success {
+  border-color: rgba(31, 106, 69, 0.34);
+  background: rgba(31, 106, 69, 0.1);
+  color: var(--color-success);
+}
+
+.contact-page .form-status--error {
+  border-color: rgba(155, 47, 47, 0.36);
+  background: rgba(155, 47, 47, 0.1);
+  color: var(--color-error);
+}
+
+.contact-page .contact-methods {
+  grid-column: span 5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page .contact-methods__grid {
+  display: grid;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+  align-content: stretch;
+  height: 100%;
+  flex: 1;
+}
+
+.contact-page .contact-method-card {
+  min-height: 10rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: var(--radius-2);
+  border: var(--border-hairline);
+  background: var(--color-bg-surface);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-4);
+  transition:
+    border-color var(--motion-duration-base) var(--motion-ease-standard),
+    box-shadow var(--motion-duration-base) var(--motion-ease-standard),
+    transform var(--motion-duration-base) var(--motion-ease-standard);
+}
+
+.contact-page .contact-method-card:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-2px);
+}
+
+.contact-page .contact-method-card__label {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-label);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-steel-700);
+}
+
+.contact-page .contact-method-card__value {
+  margin: 0 0 var(--space-2);
+  color: var(--color-text-primary);
+  font-weight: 700;
+}
+
+.contact-page .contact-method-card a.contact-method-card__value {
+  text-decoration: underline;
+  text-decoration-color: rgba(124, 95, 53, 0.38);
+  text-underline-offset: 0.22em;
+  transition: color var(--motion-duration-base) var(--motion-ease-standard);
+}
+
+.contact-page .contact-method-card a.contact-method-card__value:hover,
+.contact-page .contact-method-card a.contact-method-card__value:focus-visible {
+  color: var(--color-interactive-link);
+}
+
+.contact-page .contact-method-card__support {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--text-body-sm);
+}
+
+.contact-page .location-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: var(--space-4);
+  align-items: stretch;
+}
+
+.contact-page .map-card,
+.contact-page .visit-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-2);
+  border: var(--border-hairline);
+  background: var(--color-bg-surface);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-5);
+}
+
+.contact-page .map-card {
+  grid-column: span 7;
+  background:
+    radial-gradient(95% 65% at 92% 0%, rgba(176, 141, 87, 0.12) 0%, rgba(176, 141, 87, 0) 58%),
+    var(--color-bg-surface);
+}
+
+.contact-page .map-card h2 {
+  margin-bottom: var(--space-2);
+  font-size: var(--text-h2);
+}
+
+.contact-page .map-card p {
+  margin: 0 0 var(--space-3);
+}
+
+.contact-page .map-card__meta {
+  color: var(--color-text-secondary);
+}
+
+.contact-page .visit-card {
+  grid-column: span 5;
+}
+
+.contact-page .visit-card h3 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-h2);
+}
+
+.contact-page .visit-card p {
+  margin: 0 0 var(--space-3);
+}
+
+.contact-page .visit-card__chip-row {
+  display: grid;
+  gap: var(--space-2);
+  margin-top: auto;
+}
+
+.contact-page .visit-card__chip-row span {
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius-pill);
+  border: var(--border-hairline);
+  background: var(--color-bg-surface-2);
+  padding: 0.35rem 0.72rem;
+  font-size: var(--text-body-sm);
+  color: var(--color-text-secondary);
+}
+
+.contact-page .reassurance-card {
+  border-radius: var(--radius-2);
+  border: var(--border-hairline);
+  background: var(--color-bg-surface);
+  box-shadow: var(--shadow-soft);
+  padding: var(--space-5);
+}
+
+.contact-page .reassurance-card h2 {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-h2);
+}
+
+.contact-page .reassurance-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.contact-page .reassurance-card li {
+  position: relative;
+  margin: 0;
+  padding-left: var(--space-4);
+  color: var(--color-text-secondary);
+}
+
+.contact-page .reassurance-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--color-brass-500);
+  box-shadow: 0 0 0 0.22rem rgba(176, 141, 87, 0.18);
+}
+
+@media (max-width: 1199px) {
+  .contact-page .form-card,
+  .contact-page .contact-methods,
+  .contact-page .map-card,
+  .contact-page .visit-card {
+    grid-column: span 12;
+  }
+
+  .contact-page .booking-form__actions .btn {
+    width: 100%;
+  }
+
+  .contact-page .contact-method-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-page .page-hero {
+    padding-top: var(--space-6);
+  }
+
+  .contact-page .form-card,
+  .contact-page .map-card,
+  .contact-page .visit-card,
+  .contact-page .reassurance-card {
+    padding: var(--space-4);
+  }
+
+  .contact-page .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

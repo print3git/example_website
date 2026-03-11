@@ -1,0 +1,120 @@
+Project Brief: Fictional Watch Repair and Maintenance Company
+
+Company Name
+ChronoCare Atelier
+
+Business Summary
+ChronoCare Atelier is a premium local watch service studio that provides diagnostics, repair, servicing, polishing, and pressure testing for mechanical and luxury watches.
+
+Build Scope
+Single marketing website completed in 1 week, production-quality front-end, no complex backend dashboard.
+
+Target Audience
+- Owners of luxury and mid-to-high-end watches who need trusted maintenance.
+- Professionals (ages 28-60) who value reliability, craftsmanship, and transparent service.
+- Collectors seeking specialist handling for mechanical/automatic watches.
+- Local customers who prefer a physical drop-off option and clear turnaround times.
+
+Business Goal
+Generate qualified service requests and appointment bookings by building trust fast.
+
+Primary CTA
+Book a Service Assessment
+
+Secondary CTAs
+- Request a Quote
+- Call the Workshop
+
+Website Pages
+1. Home
+   - Hero with trust message and primary CTA
+   - Core services snapshot
+   - Proof points (years of experience, watches serviced, rating)
+   - Process preview
+   - Testimonials
+   - Final CTA block
+
+2. Services
+   - Service categories (Full Service, Battery/Seal, Crystal Replacement, Bracelet Restoration)
+   - What is included, starting price ranges, expected turnaround time
+   - FAQs tied to service decisions
+
+3. About
+   - Brand story and expertise
+   - Certifications/credentials
+   - Workshop standards and equipment highlights
+
+4. Service Process
+   - Step-by-step flow: Intake -> Diagnostic -> Quote Approval -> Service -> QA -> Return
+   - Service guarantees and warranty terms
+
+5. Contact / Booking
+   - Lead form (name, email, phone, watch brand/model, issue, preferred date)
+   - Map/address, business hours, phone, email
+   - Clear response-time promise
+
+Tone and Voice
+- Precise, calm, expert, and trustworthy
+- Premium without being flashy
+- Confident and transparent (no hype language)
+
+Visual Direction (Premium Look)
+- Clean editorial layout with strong spacing and alignment discipline
+- Color palette: deep charcoal, warm ivory, brushed-gold accent, muted steel gray
+- Typography pairing:
+  - Serif display for headings (luxury/craft signal)
+  - Modern sans-serif for body and UI text (clarity/readability)
+- High-quality close-up imagery (watch details, tools, workshop textures)
+- Subtle animations only (fade/slide reveals, soft hover transitions)
+- Refined UI details: thin dividers, elevated cards, consistent radius and shadows
+
+Required Features (1-Week Scope)
+- Fully responsive layout (mobile, tablet, desktop)
+- Sticky header with clear CTA access
+- Conversion-focused hero and repeated CTA placements
+- Service comparison cards with key facts
+- Testimonial section with believable social proof
+- Booking/contact form with front-end validation and success/error states
+- Accessibility baseline:
+  - Semantic HTML
+  - Keyboard focus states
+  - Sufficient color contrast
+  - Reduced-motion support
+- SEO basics:
+  - Page titles/meta descriptions
+  - Open Graph tags
+  - Structured data for LocalBusiness (if time permits)
+- Performance basics:
+  - Optimized images
+  - Lazy loading where appropriate
+  - Font loading strategy
+
+Success Criteria
+- UX/Visual Quality
+  - Feels like a real premium client website, not a template.
+  - Consistent design system across all sections.
+
+- Conversion Readiness
+  - Primary CTA appears above the fold and in key decision sections.
+  - Contact form is clear, short, and easy to complete on mobile.
+
+- Technical Quality
+  - No obvious layout breaks on common viewport sizes.
+  - Good Lighthouse outcomes (target):
+    - Performance >= 85
+    - Accessibility >= 95
+    - Best Practices >= 90
+    - SEO >= 90
+
+- Content Quality
+  - No placeholder text.
+  - Service details are specific enough to look credible.
+
+1-Week Execution Plan
+Day 1: Finalize brief, sitemap, content outline, and design references.
+Day 2: Create wireframes and lock design system tokens (type, color, spacing, components).
+Day 3: Build global layout, header/footer, and Home page sections.
+Day 4: Build Services, About, and Service Process pages.
+Day 5: Build Contact/Booking page and validation states.
+Day 6: Premium polish pass (motion, spacing rhythm, hover/focus states, image treatment).
+Day 7: QA pass (responsive, accessibility, SEO, performance) and deployment-ready cleanup.
